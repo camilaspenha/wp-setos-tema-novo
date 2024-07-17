@@ -17,6 +17,9 @@
 /wp-*.php
 /xmlrpc.php
 /assets/forms
+# Ignorar arquivos de configuração do sistema operacional
+.DS_Store
+Thumbs.db
 
 # Configuration
 wp-config.php
