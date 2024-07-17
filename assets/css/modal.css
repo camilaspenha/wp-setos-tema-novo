@@ -1,0 +1,29 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#modalOrcamento {
+  padding-right: 24px;
+}
+#modalOrcamento .modal-header {
+  padding: 0;
+  border: none;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+}
+#modalOrcamento .modal-body h6.modal-title {
+  color: var(--text-color);
+}
+#modalOrcamento .modal-content i {
+  font-size: 24px;
+}
+#modalOrcamento button {
+  max-width: 140px;
+  margin: 8px;
+  padding: 0;
+  font-size: 12px;
+}

@@ -1,0 +1,48 @@
+<section id="inner_tabs">
+  <div class="container">
+    <?php if($args['title']): ?>
+      <div class="section_title">
+        <h2><?= $args['title'] ?></h2>
+
+        <?php if($args['subtitle']):?>
+          <p><?= $args['subtitle'] ?></p>
+        <?php endif; ?>
+      </div> <!-- end section title -->
+    <?php endif; ?>
+    <nav>
+      <div class="nav nav-underline flex-column " id="nav-tab" role="tablist">
+        <div class="d-md-flex">
+
+        <?php foreach ($args['tabs'] as $key => $tab) { ?>
+          <button class="nav-link <?= $key == 0 ? 'active' : '' ?>" id="nav-<?= $tab['id'] ?>-tab" data-bs-toggle="tab" data-bs-target="#nav-<?= $tab['id'] ?>" type="button" role="tab" aria-controls="nav-<?= $tab['id'] ?>" aria-selected="true">
+          <?= $tab['label'] ?>
+          </button>
+        <?php } ?>
+        </div>
+      </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+
+      <?php foreach ($args['tabs'] as $key => $tab) { ?>
+        <div class="tab-pane fade <?= $key == 0 ? 'show active' : '' ?>" id="nav-<?= $tab['id'] ?>" role="tabpanel" aria-labelledby="nav-<?= $tab['id'] ?>-tab" tabindex="0">
+          <?php foreach ($tab['content'] as $key => $content) { ?>
+            <div class="tab_inner_content">
+              <div class="card_title">
+                <h3><?= $content['title'] ?></h3>
+              </div> <!-- end card title -->
+
+              <div class="card_description">
+                <?php foreach ($content['text'] as $key => $item) { ?>
+                  <p><?= $item['item'] ?></p>
+                <?php } ?>
+              </div> <!-- end card description -->
+            </div><!-- end tab inner content -->
+          <?php } ?>
+            
+        </div><!-- end tab pane -->
+      <?php } ?>
+
+    </div><!-- end tab content -->
+  </div>  <!-- end container -->
+</section><!-- end inner tabs -->

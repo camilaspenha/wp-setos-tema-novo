@@ -1,0 +1,44 @@
+import { header, backtotop } from "./seletores.js";
+export function headerScrolled() {
+    if (window.scrollY > 100) {
+        header?.classList.add("header-scrolled");
+    }
+    else {
+        header?.classList.remove("header-scrolled");
+    }
+}
+export function toggleBacktotop() {
+    if (window.scrollY > 100) {
+        backtotop?.classList.add("active");
+    }
+    else {
+        backtotop?.classList.remove("active");
+    }
+}
+export function handleInput(e) {
+    if (e.target && e.target instanceof HTMLInputElement) {
+        e.target.value = phoneMask(e.target.value);
+    }
+}
+function phoneMask(phone) {
+    return phone
+        .replace(/\D/g, "")
+        .replace(/^(\d)/, "($1")
+        .replace(/^(\(\d{2})(\d)/, "$1) $2")
+        .replace(/(\d{4})(\d{1,5})/, "$1-$2")
+        .replace(/(-\d{5})\d+?$/, "$1");
+}
+export function scrollToHash() {
+    if (window.location.hash) {
+        let hashTarget = document.querySelector(window.location.hash);
+        if (hashTarget) {
+            let offset = header.offsetHeight;
+            let elementPos = hashTarget.offsetTop;
+            window.scrollTo({
+                top: elementPos - offset,
+                behavior: "smooth",
+            });
+        }
+    }
+}
+//# sourceMappingURL=utils.js.map

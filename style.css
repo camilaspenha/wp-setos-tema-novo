@@ -1,0 +1,240 @@
+/*
+Theme Name: Setos Plataformas V2
+Theme URI: 
+Author: Site Criativo
+Author URI: https://sitecriativo.tec.br/
+Description: Tema criado para a empresa Setos Plataformas
+Requires at least: 6.4
+Tested up to: 6.5
+Requires PHP: 7.0
+Version: 2.0
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i");
+@import url("./assets/css/header.css");
+@import url("./assets/css/hero.css");
+@import url("./assets/css/carousel.css");
+@import url("./assets/css/form.css");
+@import url("./assets/css/plataforma.css");
+@import url("assets/css/cta.css");
+@import url("assets/css/manutencao.css");
+@import url("assets/css/reformas.css");
+@import url("assets/css/logos.css");
+@import url("assets/css/inner.css");
+@import url("assets/css/modal.css");
+@import url("assets/css/inner_tabs.css");
+@import url("assets/css/contato.css");
+@import url("assets/css/footer.css");
+
+:root {
+  --accent: #45c4b0;
+  --accent-hover: #289d8b;
+  --text-color: #343a40;
+  --headings: #25404e;
+  --text-font: "Poppins", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --radius: 8px;
+  --btn-sm: 200px;
+}
+:root :where(a:where(:not(.wp-element-button))) {
+  text-decoration: none !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+section img {
+  max-width: 100%;
+  border-radius: var(--radius);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  line-height: 1.4;
+  margin: 0;
+}
+h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+p {
+  font-family: var(--text-font);
+  color: var(--text-color);
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+}
+ul {
+  margin: 0;
+}
+/* section */
+section {
+  padding: 64px 16px;
+}
+.section_title {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 16px;
+}
+.section_title p {
+  position: relative;
+  padding-left: 50px;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-family: var(--heading-font);
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.section_title p::before {
+  content: "";
+  display: block;
+  background-color: var(--accent);
+  width: 45px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 2px);
+  border-radius: var(--radius);
+}
+.section_btn {
+  max-width: var(--btn-sm);
+  margin: 16px 0 24px;
+  border: 1px solid transparent;
+}
+/* ul */
+.section_description ul {
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 8px;
+  margin-top: 8px;
+}
+.section_description ul li {
+  list-style-type: none;
+  margin-top: 8px;
+  position: relative;
+  padding-left: 18px;
+}
+.section_description ul li i {
+  color: var(--accent);
+  font-size: 18px;
+  position: absolute;
+  left: -8px;
+}
+/* button */
+.btn {
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  text-transform: uppercase;
+  font-size: var(--heading-font);
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 16px 0;
+}
+.btn.btn_primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--text-color);
+}
+.btn.btn_outline_primary {
+  border-color: var(--accent);
+  border-width: 2px;
+  color: var(--accent);
+}
+.btn.btn_outline_light {
+  border-color: #fff;
+  border-width: 2px;
+  color: #fff;
+}
+.btn.btn_outline_primary:hover,
+.btn.btn_outline_primary:focus,
+.btn.btn_outline_primary:active,
+.btn.btn_primary:hover,
+.btn.btn_primary:focus,
+.btn.btn_primary:active {
+  background-color: var(--text-color);
+  border-color: var(--text-color);
+  color: #fff;
+}
+.btn.btn_outline_light:hover,
+.btn.btn_outline_light:focus,
+.btn.btn_outline_light:active {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--text-color);
+}
+.btn i {
+  font-size: 16px;
+  margin: 0 2px;
+  transition: 0.1s;
+}
+.btn:hover i.bi-arrow-right {
+  margin-left: 10px;
+}
+/* preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #000;
+}
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 0px);
+  left: calc(50% - 30px);
+  border: 6px solid var(--accent);
+  border-bottom-color: #000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+@-webkit-keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

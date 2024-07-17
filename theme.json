@@ -1,0 +1,25 @@
+{
+	"version": 2,
+	"customTemplates": [
+		{
+			"name": "page-home",
+			"postTypes": ["page"],
+			"title": "Page Home"
+		},
+    {
+			"name": "page-contato",
+			"postTypes": ["page"],
+			"title": "Page Contato"
+		},
+    {
+			"name": "page-inner",
+			"postTypes": ["page"],
+			"title": "Page Inner Serviço"
+		},
+    {
+			"name": "page-single",
+			"postTypes": ["page"],
+			"title": "Page Single Plataforma"
+		}
+	]
+}

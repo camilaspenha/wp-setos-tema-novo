@@ -1,0 +1,36 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.carousel-indicators {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.carousel-indicators [data-bs-target] {
+  background-clip: inherit;
+  border: 0;
+  border-top: 2px solid transparent;
+  border-radius: var(--radius);
+  width: 48px;
+  height: 2px;
+}
+.carousel-indicators .active {
+  background-color: var(--accent);
+  height: 4px;
+}
+.carousel-caption {
+  margin-bottom: 8px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 768px) {
+  .carousel-caption {
+    padding: 8px 16px;
+  }
+  .carousel-caption h5 {
+    font-size: 12px;
+  }
+}

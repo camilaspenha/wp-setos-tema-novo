@@ -1,0 +1,79 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.page-template-default header,
+.page-template-page-single header,
+.page-template-page-inner header {
+  background-color: #000;
+  border: none;
+}
+.page-template-page-inner #hero {
+  min-height: 100vh;
+  background: url("../img/hero-bg-inner.jpg") top center no-repeat;
+  min-height: 416px;
+  background-size: cover;
+  position: relative;
+}
+.page-template-page-inner #hero.bg-treinamento {
+  background-image: url("../img/hero-bg-inner-treinamentos.jpg");
+}
+@media screen and (min-width: 768px) {
+  .page-template-page-inner #hero {
+    background-attachment: fixed;
+  }
+}
+.page-template-page-inner #hero::before {
+  background: #0f0c29;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#000000),
+    color-stop(#0000007a),
+    to(#000000)
+  );
+  background: -o-linear-gradient(left, #000000, #0000007a, #000000);
+  background: linear-gradient(to right, #000000, #0000007a, #000000);
+}
+#inner_header .section_description p {
+  font-size: 14px;
+}
+/*
+#inner_header {
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+*/
+#inner_header .section_description p ~ p {
+  margin-top: 16px;
+}
+
+/* inner single */
+.page-template-page-single {
+  background-color: #e7e7e7;
+  padding-top: 74px;
+}
+.page-template-page-single .inner_page.container {
+  border-top: 3px solid var(--accent);
+}
+.page-template-page-single .inner_page.container {
+  margin: 32px auto;
+  background-color: #fff;
+  border-radius: var(--radius);
+  padding: 8px 32px;
+}
+.inner_page.container .container {
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .page-template-page-single .inner_page.container {
+    padding: 16px;
+  }
+}
+.page-template-page-single .inner_page .container section {
+  padding: 16px;
+}
