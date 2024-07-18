@@ -5,7 +5,7 @@ $cta = get_fields($args['id']);
 <section id="cta">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-7">
+      <div class="col-12 col-lg-7">
 
         <?php if( $cta['title']): ?>
           <div class="section_title">
