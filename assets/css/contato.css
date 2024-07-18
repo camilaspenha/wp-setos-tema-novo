@@ -4,8 +4,8 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-section.inner-page ~ .contact {
-  padding-top: 30px;
+#contact {
+  padding-top: 74px;
 }
 .contact .info {
   width: 100%;

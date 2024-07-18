@@ -35,16 +35,13 @@
 #inner_header .section_description p {
   font-size: 14px;
 }
-/*
+
 #inner_header {
   padding-top: 32px;
-  padding-bottom: 16px;
 }
-*/
 #inner_header .section_description p ~ p {
   margin-top: 16px;
 }
-
 /* inner single */
 .page-template-page-single {
   background-color: #e7e7e7;
@@ -69,4 +66,7 @@
 }
 .page-template-page-single .inner_page .container section {
   padding: 16px;
+}
+.page-template-page-single .col_img img {
+  max-height: 400px;
 }

@@ -13,7 +13,7 @@
  <section id="inner_header">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-<?= $col_txt ?> p-xl-5 d-flex flex-column justify-content-center  mt-4 mt-lg-0 <?= $class ?>">
+      <div class="col-12 col-lg-<?= $col_txt ?> px-xl-5 d-flex flex-column justify-content-center  mt-4 mt-lg-0 <?= $class ?>">
 
       <?php if($args['title']):?>
         <div class="section_title">
@@ -59,10 +59,9 @@
 
           <?php endif; ?>
         </div><!-- end btn -->
-
       </div><!-- end col -->
 
-      <div class="col-12 col-lg-<?= $col_img ?>">
+      <div class="col-12 col-lg-<?= $col_img ?> col_img text-center">
         <?php if($args['select'] == 'img'): ?>
             <img src="<?=  $args['img']['url']?> " alt="<?= $args['img']['alt'] ?>">
           <?php endif; ?>

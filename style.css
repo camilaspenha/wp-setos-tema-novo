@@ -87,7 +87,8 @@ ul {
 }
 /* section */
 section {
-  padding: 64px 16px;
+  padding: 16px;
+  margin-bottom: 32px;
 }
 .section_title {
   display: flex;
