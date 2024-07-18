@@ -4,13 +4,6 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-
-.page-template-default header,
-.page-template-page-single header,
-.page-template-page-inner header {
-  background-color: #000;
-  border: none;
-}
 .page-template-page-inner #hero {
   min-height: 100vh;
   background: url("../img/hero-bg-inner.jpg") top center no-repeat;

@@ -4,11 +4,12 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-header {
+body.home header {
   background-color: transparent;
   border-bottom: 1px solid #313131;
 }
-header.header-scrolled {
+header,
+body.home header.header-scrolled {
   background-color: #000;
   border: none;
 }
