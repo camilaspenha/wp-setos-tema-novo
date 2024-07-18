@@ -239,3 +239,7 @@ section {
     transform: rotate(360deg);
   }
 }
+.page-404.container {
+  padding: 64px;
+  min-height: 50vh;
+}
