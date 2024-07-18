@@ -25,7 +25,7 @@
   padding: 32px;
   margin-bottom: 16px;
   border-radius: var(--radius);
-  border: 3px solid #fff;
+  border: 3px solid #2c2c2c;
 }
 .card_manutencao .card_description {
   min-height: 110px;
