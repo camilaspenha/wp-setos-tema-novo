@@ -1,14 +1,5 @@
 <section id="inner_tabs">
   <div class="container">
-    <?php if($args['title']): ?>
-      <div class="section_title">
-        <h2><?= $args['title'] ?></h2>
-
-        <?php if($args['subtitle']):?>
-          <p><?= $args['subtitle'] ?></p>
-        <?php endif; ?>
-      </div> <!-- end section title -->
-    <?php endif; ?>
     <nav>
       <div class="nav nav-underline flex-column " id="nav-tab" role="tablist">
         <div class="d-md-flex">
