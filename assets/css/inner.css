@@ -38,6 +38,7 @@
 
 #inner_header {
   padding-top: 32px;
+  margin-bottom: 16px;
 }
 #inner_header .section_description p ~ p {
   margin-top: 16px;
@@ -63,6 +64,9 @@
   .page-template-page-single .inner_page.container {
     padding: 16px;
   }
+}
+.page-template-page-single .wp-site-blocks {
+  padding: 24px 8px;
 }
 .page-template-page-single .inner_page .container section {
   padding: 16px;

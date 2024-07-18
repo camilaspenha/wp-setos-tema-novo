@@ -93,7 +93,7 @@ section {
 .section_title {
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .section_title p {
   position: relative;
@@ -118,7 +118,7 @@ section {
 }
 .section_btn {
   max-width: var(--btn-sm);
-  margin: 16px 0 24px;
+  margin: 16px 0 0;
   border: 1px solid transparent;
 }
 /* ul */

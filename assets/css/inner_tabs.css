@@ -9,7 +9,7 @@ section#inner_tabs .section_title {
   margin-bottom: 32px;
 }
 #inner_tabs {
-  padding-top: 16px;
+  margin-bottom: 16px;
 }
 /* tabs */
 #inner_tabs nav {
