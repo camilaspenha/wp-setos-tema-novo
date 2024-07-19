@@ -52,7 +52,7 @@
   border-top: 3px solid var(--accent);
 }
 .page-template-page-single .inner_page.container {
-  margin: 32px auto;
+  margin: 90px auto 32px auto;
   background-color: #fff;
   border-radius: var(--radius);
   padding: 8px 32px;
