@@ -1,5 +1,5 @@
-<section id="hero">
-  <div class="container">
+<section id="hero" class="d-flex flex-column justify-content-center">
+  <div class="container ">
   <div class="row">
     <!-- Hero Title Col -->
     <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
@@ -32,7 +32,7 @@
       </div>
     </div> <!-- end Hero Title Col -->
     <!-- Hero Form -->
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
      <?php get_template_part( 'parts/template-parts/form');   ?>
     </div> <!-- end col -->
 
