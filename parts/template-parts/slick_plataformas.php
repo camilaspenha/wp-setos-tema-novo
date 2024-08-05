@@ -33,7 +33,7 @@
             </div> <!-- end card description -->
 
             <div class="card_btn">
-              <a target="_blank" href="<?= $plataforma['button']['link']['link'] ?>" class="btn btn_outline_primary">
+              <a href="<?= $plataforma['button']['link']['link'] ?>" class="btn btn_outline_primary">
                 <?= $plataforma['button']['link']['label'] ?>
               </a>
               <a href="javascript: void(0)" class="btn btn_primary" onclick="setQuote(<?= $plataforma['id'] ?>,'<?= $plataforma['name'] ?>')">

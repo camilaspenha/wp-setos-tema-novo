@@ -24,7 +24,7 @@
 
           <?php if($args['button']): ?>
             <div class="section_btn">
-              <a target="_blank" href="<?= $args['button']['link']['url'] ?>" class="btn btn_outline_light" aria-label="abre página de Serviços de Manutenção em nova página"><?= $args['button']['label']?> <i class="bi bi-arrow-right"></i> </a>
+              <a href="<?= $args['button']['link']['url'] ?>" class="btn btn_outline_light" aria-label="abre página de Serviços de Manutenção"><?= $args['button']['label']?> <i class="bi bi-arrow-right"></i> </a>
             </div><!-- end btn -->
           <?php endif; ?>
         </div>

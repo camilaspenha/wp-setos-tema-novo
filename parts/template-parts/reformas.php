@@ -35,7 +35,7 @@
           <?php endif; ?>
           
           <div class="section_btn">
-            <a target="_blank"aria-label="Acessa página de Manutenção e Reformas em nova aba" href="<?= $args['link'] ?>" class="btn btn_primary"><?= $args['button_label'] ?> 
+            <a aria-label="Acessa página de Manutenção e Reformas" href="<?= $args['link'] ?>" class="btn btn_primary"><?= $args['button_label'] ?> 
             <i class="bi bi-arrow-right"></i>
           </a>
           </div><!-- end btn -->

@@ -38,7 +38,7 @@
 
           <?php if($args['button']):?>
             <div class="section_btn">
-              <a target="_blank" aria-label="Acessa página de Manutenção e Reformas em nova aba" href="<?= $args['button']['link'] ?>" class="btn btn_primary"><?= $args['button']['label'] ?> 
+              <a aria-label="Acessa página de Treinamentos" href="<?= $args['button']['link'] ?>" class="btn btn_primary"><?= $args['button']['label'] ?> 
               <i class="bi bi-arrow-right"></i>
             </a>
             </div><!-- end btn -->

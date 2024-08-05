@@ -23,7 +23,7 @@
 
         <!-- Hero Button -->
         <?php if($args['botao'] && $args['botao']['label']): ?>
-          <div class="section_btn">
+          <div class="section_btn mb-5">
             <a href="<?= $args['botao']['link'] ?>" aria-label="Link para rolar a página até a seção <?= $args['botao']['label'] ?>" class="btn btn_outline_light">
               <?= $args['botao']['label'] ?>
             </a>
